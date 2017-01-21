@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by 3ppat on 1/8/2017.
  */
-public class LocpUserDetailsService implements UserDetailsService {
+public class CustomUserDetailsService implements UserDetailsService {
 
 
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
