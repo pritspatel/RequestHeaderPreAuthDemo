@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PreAuthDemo.iml" filepath="$PROJECT_DIR$/PreAuthDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RequestHeaderPreAuthDemo.iml" filepath="$PROJECT_DIR$/RequestHeaderPreAuthDemo.iml" />
     </modules>
   </component>
 </project>

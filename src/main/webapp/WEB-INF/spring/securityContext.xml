@@ -6,11 +6,12 @@
 
     <security:http use-expressions="true" auto-config="false" entry-point-ref="http403EntryPoint">
         <security:intercept-url pattern="/api/*" access="hasRole('ROLE_USER')"/>
-        <security:custom-filter position="PRE_AUTH_FILTER" ref="locpFilter" />
+        <security:custom-filter position="PRE_AUTH_FILTER" ref="customPreAuthFilter"/>
     </security:http>
 
-    <bean id="locpFilter" class="org.springframework.security.web.authentication.preauth.RequestHeaderAuthenticationFilter">
-        <property name="principalRequestHeader" value="LOCP_USER"/>
+    <bean id="customPreAuthFilter"
+          class="org.springframework.security.web.authentication.preauth.RequestHeaderAuthenticationFilter">
+        <property name="principalRequestHeader" value="MY_USER"/>
         <property name="authenticationManager" ref="authenticationManager" />
     </bean>
 
