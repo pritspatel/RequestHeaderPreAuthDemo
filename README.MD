@@ -15,6 +15,6 @@ application url as if it was sent by your other application which does the authe
 
 ### How to Test this app
 
-1. Run the app in tomcat.
+1. Run the app in tomcat(Can be deployed in any servlet container).
 2. Setup request header name-value in chrome's Modify Header plugin
 3. Access http://localhost:8090/api/hello
